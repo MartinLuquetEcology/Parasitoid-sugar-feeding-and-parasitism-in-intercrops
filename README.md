@@ -29,4 +29,4 @@ Variables in each dataset are described in the "DATASET AND VARIABLE DESCRIPTION
 
 "Field data analysis (surveys).R" analyses the data from field surveys (aphid and parasitoid dynamics in single and intercrops).
 
-"Functions for adjusted counting" contains some functions used to adjust the random forest results and predict the field parasitoid sugar feeding status (they will be sourced directly from "Prediction and analysis of feeding patterns in the field.R").
+"Functions for adjusted counting" contains two functions used to adjust the random forest results and predict the field parasitoid sugar feeding status (they will be sourced directly from "Prediction and analysis of feeding patterns in the field.R").
