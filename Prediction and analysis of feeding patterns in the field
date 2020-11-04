@@ -9,7 +9,7 @@ library(ade4)
     #### Loading some functions ####
 
   # Set working directory here
-  # setwd("~/Boulot/Thèse 2016-2019/AOBox/R/Scripts/Terrain 2018")
+  # setwd("~/Boulot/ThÃ¨se 2016-2019/AOBox/R/Scripts/Terrain 2018")
 
 source('Functions - for publication.R', encoding = 'UTF-8')
 
@@ -17,7 +17,7 @@ source('Functions - for publication.R', encoding = 'UTF-8')
 
     #### Importing Data ####
 
-  # setwd("~/Boulot/Thèse 2016-2019/AOBox/R/Scripts/Terrain 2018")
+  # setwd("~/Boulot/ThÃ¨se 2016-2019/AOBox/R/Scripts/Terrain 2018")
 lab_training <- read.table('labdata_for_predictions.txt',h=T)
   # This is a randomly selected subsample of the original dataset, as balanced as possible
   # See "Creating the training table" script
@@ -43,7 +43,7 @@ ggplot(lab_training,aes(y=GF_Ratio,x=TotSug,colour=Tmt.12))+
   geom_point(size=2)+
   labs(fill='Feeding class')+
   ylab('GF Ratio')+
-  xlab('Total Sugar Amount (µg/mg insect)')+
+  xlab('Total Sugar Amount (Âµg/mg insect)')+
   labs(colour='Feeding class')+
   theme(legend.title=element_text(face='bold'),legend.position='bottom')
 
@@ -54,7 +54,7 @@ Fig3 <- ggplot(lab_training,aes(y=GF_Ratio,x=Fructose,colour=Tmt.12))+
   geom_point(size=2)+
   labs(fill='Feeding class')+
   ylab('GF Ratio')+
-  xlab('Fructose (µg/mg insect)')+
+  xlab('Fructose (Âµg/mg insect)')+
   labs(colour='Feeding class')+
   theme(legend.title=element_text(face='bold'))
 
@@ -85,7 +85,7 @@ ggplot(lab_training,aes(y=GF_Ratio,x=TotSug,colour=Tmt,shape=Hour_treatment))+
   geom_point(size=2)+
   theme(legend.position = 'bottom',
         legend.title=element_blank())+
-  xlab('Total Sugar Amount (µg/mg insect)')+
+  xlab('Total Sugar Amount (Âµg/mg insect)')+
   ylab('GF Ratio')+
   ggtitle('Total Sugar Amount vs GF Ratio')   ## Some insects that fed on nectar a long time ago still have high profiles
                                               ## But with a lot of variation
@@ -98,7 +98,7 @@ ggplot(lab_training,aes(y=GF_Ratio,x=Fructose,colour=Tmt,shape=Hour_treatment))+
   geom_point(size=2)+
   theme(legend.position = 'bottom',
         legend.title=element_blank())+
-  xlab('Fructose (µg/mg insect)')+
+  xlab('Fructose (Âµg/mg insect)')+
   ylab('GF Ratio')+
   ggtitle('Fructose vs GF Ratio')
 
@@ -107,8 +107,8 @@ ggplot(lab_training,aes(y=Glucose,x=Fructose,colour=Tmt,shape=Hour_treatment))+
   geom_point(size=2)+
   theme(legend.position = 'bottom',
         legend.title=element_blank())+
-  ylab('Glucose (µg/mg insect)')+
-  xlab('Fructose (µg/mg insect)')+
+  ylab('Glucose (Âµg/mg insect)')+
+  xlab('Fructose (Âµg/mg insect)')+
   ggtitle('Fructose vs Glucose')
 
 # Fructose vs Honeydew Ratio
@@ -116,7 +116,7 @@ ggplot(lab_training,aes(y=H_Ratio,x=Fructose,colour=Tmt,shape=Hour_treatment))+
   geom_point(size=2)+
   theme(legend.position = 'bottom',
         legend.title=element_blank())+
-  xlab('Fructose (µg/mg insect)')+
+  xlab('Fructose (Âµg/mg insect)')+
   ylab('Honeydew ratio')+
   ggtitle('Fructose vs H Ratio')  ## Not perfect but we see a separation between nectar-fed and honeydew-fed insects
 
@@ -247,7 +247,7 @@ facet_wrap(~Field_position)+
   geom_point(aes(colour=Field_type),alpha=1,size=1.5,
              position = position_jitterdodge())+
   xlab('Field')+
-  ylab('Total sugar content (µg/mg insect)')
+  ylab('Total sugar content (Âµg/mg insect)')
 
 
   ## B. Looking field per field
@@ -258,7 +258,7 @@ ggplot(field, aes(y=TotSug, x= Field,fill=Field_type)) +
   geom_point(aes(colour=Field_type),alpha=1,size=1.5,
              position = position_jitterdodge())+
   xlab('Field')+
-  ylab('Total sugar content (µg/mg insect)')+
+  ylab('Total sugar content (Âµg/mg insect)')+
   labs(fill='Field type',colour='Field type')+
   theme(legend.title=element_text(face='bold'))
 
@@ -322,7 +322,7 @@ Fig5 <- ggplot(field, aes(y=TotSug, x= Field,fill=Field_type)) +
   geom_point(aes(colour=Field_type),alpha=1,size=1.5,
              position = position_jitterdodge())+
   xlab('Field')+
-  ylab('Total sugar content (µg/mg insect)')+
+  ylab('Total sugar content (Âµg/mg insect)')+
   labs(fill='Field type',colour='Field type')+
   theme(legend.title=element_text(face='bold'))
 #ggsave(Fig5,filename='Figure_5.png',height=10,width=16, unit='cm',dpi=1000)
