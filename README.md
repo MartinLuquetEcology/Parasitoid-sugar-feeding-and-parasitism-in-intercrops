@@ -5,6 +5,7 @@ These datasets and R scripts are complementary to the paper - name of the paper,
 They will allow reproducing all results presented in the main paper and in the appendices.
 
 
+
 ----- Description of the datasets -----
 
 "all_lab_data.txt" contains all the data about sugar profiles of parasitoids and food sources obtained in the lab experiments.
@@ -16,6 +17,7 @@ They will allow reproducing all results presented in the main paper and in the a
 "labdata_for_prediction" is a subset of "all_lab_data.txt", used to train the classifier (can be re-created using the script "Creating the training table - for publication.R").
 
 ADD a .doc for variable description !!!
+
 
 ----- Description of the scripts ----- CHANGE NAMES
 
