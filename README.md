@@ -16,15 +16,15 @@ They will allow reproducing all results presented in the main paper and in the a
 
 "labdata_for_prediction.txt" is a subset of "all_lab_data.txt", used to train the classifier (can be re-created using the script "Creating the training table - for publication.R").
 
-ADD a .doc for variable description !!!
+Variables in each dataset are described in the "DATASET AND VARIABLE DESCRIPTION.txt" document.
 
 
 ----- Description of the scripts ----- CHANGE NAMES
 
-"Script - lab data analysis - for publication.R" presents analyses made on the lab data: sugar profiles and dynamics of the different food sources and parasitoid treatments.
+"Lab data analysis.R" presents analyses made on the lab data: sugar profiles and dynamics of the different food sources and parasitoid treatments.
 
-"Script - Creating the training table - for publication.R" creates a nearly balanced dataset in order to train a classifier.
+"Creating the training dataset.R" creates a nearly balanced dataset in order to train a classifier.
 
-"Script - prediction and field data analysis - for publication.R" trains a classifier thanks to this subsampled dataset and predicts the feeding status of the field-caught insects. It also presents some analyses of the field insects' sugar profiles.
+"Prediction and analysis of feeding patterns in the field.R" trains a classifier thanks to this subsampled dataset and predicts the feeding status of the field-caught insects. It also presents some analyses of the field insects' sugar profiles.
 
-"Script - field data analysis - for publication.R" analyses the data from field surveys (aphid and parasitoid dynamics in single and intercrops).
+"Field data analysis (surveys).R" analyses the data from field surveys (aphid and parasitoid dynamics in single and intercrops).
