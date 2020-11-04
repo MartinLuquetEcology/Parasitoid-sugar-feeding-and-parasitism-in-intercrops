@@ -9,7 +9,7 @@ library(RVAideMemoire)
 library(vegan)
 
   # Set working directory here
-  #setwd("~/Boulot/Thèse 2016-2019/AOBox/R/Scripts/Terrain 2018")
+  #setwd("~/Boulot/ThÃ¨se 2016-2019/AOBox/R/Scripts/Terrain 2018")
 
 
 
@@ -131,7 +131,7 @@ dynamics.plot <- function(variable,variable.name,rm=F) {
     geom_line(aes(linetype=Sugar))+
     geom_point(size=3)+
     xlab("Time (h)")+
-    ylab(paste(variable.name,"(µg/mg insect)"))+
+    ylab(paste(variable.name,"(Âµg/mg insect)"))+
     theme(legend.position="bottom",legend.title=element_text(face='bold'))+
     guides(color=guide_legend(nrow=1))
   
