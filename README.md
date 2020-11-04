@@ -19,7 +19,7 @@ They will allow reproducing all results presented in the main paper and in the a
 Variables in each dataset are described in the "DATASET AND VARIABLE DESCRIPTION.txt" document.
 
 
------ Description of the scripts ----- CHANGE NAMES
+----- Description of the scripts -----
 
 "Lab data analysis.R" presents analyses made on the lab data: sugar profiles and dynamics of the different food sources and parasitoid treatments.
 
