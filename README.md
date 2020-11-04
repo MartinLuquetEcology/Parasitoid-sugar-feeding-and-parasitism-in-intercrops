@@ -14,7 +14,7 @@ They will allow reproducing all results presented in the main paper and in the a
 
 "field_data_surveys.txt" contains the data about surveys of aphids and mummies in the field.
 
-"labdata_for_prediction.txt" is a subset of "all_lab_data.txt", used to train the classifier (can be re-created using the script "Creating the training table - for publication.R").
+"labdata_for_prediction.txt" is a subset of "all_lab_data.txt", used to train the classifier (can be re-created using the script "Creating the training dataset.R").
 
 Variables in each dataset are described in the "DATASET AND VARIABLE DESCRIPTION.txt" document.
 
