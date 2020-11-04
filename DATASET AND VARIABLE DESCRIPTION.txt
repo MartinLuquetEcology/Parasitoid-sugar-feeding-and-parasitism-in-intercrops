@@ -1,0 +1,86 @@
+------------- all_lab_data.txt  -------------
+
+Contains all the data about sugar profiles of parasitoids and food sources obtained in the lab experiments.
+Variables Parasitoid_Origin, Hour_treatment and Tmt.12 apply to parasitoids only (NA for food sources).
+
+--VARIABLE DESCRIPTION
+--- Date: Date on which parasitoids received their feeding treatment
+--- Parasitoid_Origin: Aphid species on which parasitoids developed (Ap = Acyrthosiphon pisum, Sa = Sitobion avenae)
+--- Hour_treatment: Time between receiving a feeding treatment and being frozen. 
+--- Sugar_treatment: Feeding treatment received by parasitoids (for parasitoids) OR type of food source (for food sources)
+--------------------------------------------- Unfed = Water only
+--------------------------------------------- AfH = Aphis fabae honeydew
+--------------------------------------------- ApH = Acyrthosiphon pisum honeydew
+--------------------------------------------- SaH = Sitobion avenae honeydew
+--------------------------------------------- VfN = Vicia faba extrafloral nectar
+--------------------------------------------- VsN = Vicia sativa extrafloral nectar
+--- Code: Number to identify samples
+--- Glucose: glucose amount (µg/mg insect)
+--- Fructose: fructose amount (µg/mg insect)
+--- Sucrose: sucrose amount (µg/mg insect)
+--- Maltose: maltose amount (µg/mg insect)
+--- Erlose: erlose amount (µg/mg insect)
+--- Melezitose: melezitose amount (µg/mg insect)
+--- Glucose: glucose amount (µg/mg insect)
+--- Stacchyose: stacchyose amount (µg/mg insect)
+--- GF_Ratio: ratio Glucose:Fructose (Glucose/Glucose+Fructose)
+--- H_Ratio: Honeydew ratio (Maltose+Erlose+Melezitose/Total Sugar Amount)
+--- TotSug: Total Sugar Amount
+--- Type: Type of biological material (Parasitoid or Food source)
+--- Tmt.12: Feeding class (12-h detection time) - Unfed, Honeydew or Nectar
+
+
+------------- field_data_sugars.txt  -------------
+
+Contains all the data about sugar profiles of parasitoids captured in the field.
+
+--VARIABLE DESCRIPTION
+--- Sample: number to identify samples
+--- Field: Field ID (S1 to S6 -> single crops, I1 to I6 -> intercrops)
+--- Field_type: Type of field (Triticale = Single crop, Intercrop = Triticale+Faba bean intercrop)
+--- Field_position: distance from the border at which the parasitoid was sampled
+--- Date: date of capture
+--- Species: Aphidius species
+--- Dry_weight_mg: dry weight of the parasitoid, after lyophilisation
+--- Glucose: glucose amount (µg/mg insect)
+--- Fructose: fructose amount (µg/mg insect)
+--- Sucrose: sucrose amount (µg/mg insect)
+--- Maltose: maltose amount (µg/mg insect)
+--- Erlose: erlose amount (µg/mg insect)
+--- Melezitose: melezitose amount (µg/mg insect)
+--- Glucose: glucose amount (µg/mg insect)
+--- Stacchyose: stacchyose amount (µg/mg insect)
+--- GF_Ratio: ratio Glucose:Fructose (Glucose/Glucose+Fructose)
+--- TotSug: Total Sugar Amount
+--- H_Ratio: Honeydew ratio (Maltose+Erlose+Melezitose/Total Sugar Amount)
+
+
+------------- field_data_surveys.txt  -------------
+
+Contains the data about surveys of aphids and mummies in the field.
+
+--VARIABLE DESCRIPTION
+--- Week: Week number on which the survey was done (year 2018)
+--- Position: distance from the border
+--- Field: Field ID (S1 to S6 -> single crops, I1 to I6 -> intercrops)
+--- Type: Type of field (Single_crop = Triticale single crop, Intercrop = Triticale+Faba bean intercrop)
+--- Tot_aphids: total number of aphids observed on 50 triticale tillers
+--- S_avenae: number of Sitobion avenae aphids observed on 50 triticale tillers
+--- M_dirhodum: number of Metopolophium dirhodum aphids observed on 50 triticale tillers
+--- R_padi: number of Rhopalosiphum padi aphids observed on 50 triticale tillers
+--- Aphidius_mummies: number of Aphidius mummies observed on 50 triticale tillers
+--- Ephedrus_mummies: number of Ephedrus mummies observed on 50 triticale tillers
+--- Praon_mummies: number of Praon mummies observed on 50 triticale tillers
+--- Total_mummies: total number of mummies observed on 50 triticale tillers
+--- NBp_aphids: number of triticale tillers on which aphids were observed
+--- NBp_Sa: number of triticale tillers on which Sitobion avenae aphids were observed
+--- NBp_Md: number of triticale tillers on which Metopolophium dirhodum were observed
+--- NBp_Rp: number of triticale tillers on which Rhopalosiphum padi were observed
+--- NBp_Aphi: number of triticale tillers on which Aphidius mummies were observed
+--- NBp_Ephe: number of triticale tillers on which Ephedrus mummies were observed
+--- NBp_Pra: number of triticale tillers on which Praon mummies were observed
+--- NBp_mom_tot: number of triticale tillers on which mummies were observed
+
+------------- labdata_for_prediction.txt ------------- 
+Is a subset of "all_lab_data.txt", used to train the classifier (can be re-created using the script "Creating the training table - for publication.R").
+Variables are the same than for "all_lab_data.txt" dataset.
