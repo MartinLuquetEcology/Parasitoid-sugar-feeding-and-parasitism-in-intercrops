@@ -1,6 +1,6 @@
 # Parasitoid-sugar-feeding-and-parasitism-in-intercrops
 
-These datasets and R scripts are complementary to the paper - name of the paper, journal, etc.
+These datasets and R scripts are complementary to the paper "Aphid honeydew may be the predominant sugar source for Aphidius parasitoids even in nectar-providing intercrops"
 
 They will allow reproducing all results presented in the main paper and in the appendices.
 
